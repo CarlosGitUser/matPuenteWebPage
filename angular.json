@@ -27,7 +27,7 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/estilos.css"
             ],
             "scripts": []
           },
@@ -85,8 +85,10 @@
               }
             ],
             "styles": [
+
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/estilos.css"
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -95,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "04293fee-67f3-4030-9f1a-cadccb233c76"
   }
 }
