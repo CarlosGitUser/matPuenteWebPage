@@ -1,0 +1,108 @@
+footer {
+    background: #151515;
+    padding: 80px 0px;
+}
+
+.foo-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foo-col {
+    width: 50%;
+}
+
+.foo-col:last-child {
+    margin-left: 50px;
+}
+
+.foo-col:first-child {
+    margin-right: 50px;
+}
+
+.foo-col h2 {
+    color: #E3E3E3;
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+.f-input {
+    position: relative;
+    width: 100%;
+}
+
+.f-input input {
+    width: 100%;
+    padding: 16px 30px;
+    background: #2C2B2B;
+    border: none;
+    font-size: 15px;
+    padding-right: 50px;
+    border-radius: 25px;
+    outline: 0;
+    color: #A7A1A1;
+}
+
+.f-input .hm-btn-round {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+    margin-right: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.foo-col ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.foo-col ul li {
+    width: 50%;
+    margin-bottom: 16px;
+}
+
+.foo-col ul li a {
+    color: #E3E3E3;
+    font-size: 15px;
+}
+
+.foo-col ul li a:hover {
+    color: var(--color-principal);
+    text-decoration: underline;
+}
+
+.foo-copy {
+    background: #000000;
+    padding: 40px 0px;
+}
+
+.foo-copy p {
+    text-align: center;
+    color: #E3E3E3;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 800px) {
+    .foo-row {
+        flex-direction: column;
+    }
+
+    .foo-col {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .foo-col ul {
+        display: none;
+    }
+}

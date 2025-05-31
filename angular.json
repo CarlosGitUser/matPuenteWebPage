@@ -21,10 +21,8 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+               "src/assets",
+               "src/favicon.ico"
             ],
             "styles": [
               "src/estilos.css"
@@ -79,15 +77,13 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets",
+              "src/favicon.ico"
             ],
             "styles": [
 
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css",
+               "src/styles.css",
               "src/estilos.css"
             ],
             "scripts": [
