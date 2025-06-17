@@ -1,9 +1,5 @@
 import { Routes } from '@angular/router';
 
-<<<<<<< HEAD
-
-export const routes: Routes = [];
-=======
 // Importación de componentes
 import { HomeComponent } from './components/home/home.component';
 import { AcercaComponent } from './components/acerca/acerca.component';
@@ -28,4 +24,3 @@ export const routes: Routes = [
   // { path: 'register', component: RegisterComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
->>>>>>> 1e3011e63fd221a6e78b6226564a61f31a12992b
