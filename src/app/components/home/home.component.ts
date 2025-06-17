@@ -37,9 +37,7 @@ import { FooterComponent } from '../footer/footer.component';
     TabCompraSegComponent,
     MobileAppPromoComponent,
     NewsletterComponent,
-    HelpcenterComponent,
-    HeaderComponent,
-    FooterComponent
+    HelpcenterComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
