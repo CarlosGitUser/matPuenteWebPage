@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HerosectionComponent } from '../herosection/herosection.component';
 import { FiltrarProductosComponent } from '../filtrar-productos/filtrar-productos.component';
 import { ProductosVistaComponent } from '../productos-vista/productos-vista.component';
 import { PaginationCuadradoComponent } from '../pagination-cuadrado/pagination-cuadrado.component';
@@ -7,6 +8,7 @@ import { PaginationCuadradoComponent } from '../pagination-cuadrado/pagination-c
 @Component({
   selector: 'app-productos',
   imports: [
+    HerosectionComponent,
     FiltrarProductosComponent,
     ProductosVistaComponent,
     PaginationCuadradoComponent
