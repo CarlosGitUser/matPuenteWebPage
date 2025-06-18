@@ -1,11 +1,5 @@
 import { Routes } from '@angular/router';
 
-<<<<<<< HEAD
-
-export const routes: Routes = [];
-
-=======
->>>>>>> 5b2d15641b372476457a85abc5bbe3498713f148
 // Importación de componentes
 import { HomeComponent } from './components/home/home.component';
 import { AcercaComponent } from './components/acerca/acerca.component';
@@ -29,8 +23,4 @@ export const routes: Routes = [
   // { path: 'login', component: LoginComponent },
   // { path: 'register', component: RegisterComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 5b2d15641b372476457a85abc5bbe3498713f148
