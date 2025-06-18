@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
@@ -9,7 +10,9 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     RouterOutlet,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HttpClientModule,
+    
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
