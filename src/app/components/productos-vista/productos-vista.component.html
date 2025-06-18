@@ -1,0 +1,24 @@
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+    
+  <div *ngFor="let producto of productos"
+       class="border border-black shadow rounded overflow-hidden min-h-[360px] flex flex-col justify-between hover:shadow-lg transition duration-300">
+
+    <div *ngIf="producto.tiene_oferta" class="bg-orange-600 text-white text-xs px-2 py-1 font-semibold">
+      Oferta
+    </div>
+
+    <div class="flex justify-center items-center p-4">
+      <img [src]="producto.imagen_url" [alt]="producto.nombre" class="h-32 object-contain" />
+    </div>
+
+    <div class="bg-yellow-500 p-4">
+      <p class="text-sm font-medium text-black leading-tight">{{ producto.nombre }}</p>
+      <p *ngIf="producto.tiene_oferta" class="text-gray-700 text-sm line-through mt-1">
+        ${{ producto.precio_original }}
+      </p>
+      <p class="text-lg font-bold text-black">
+        ${{ producto.precio_oferta || producto.precio_original }}
+      </p>
+    </div>
+  </div>
+</div>

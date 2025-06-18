@@ -5,9 +5,7 @@
       <!-- Logo -->
       <div class="flex-1 md:flex md:items-center md:gap-12">
         <a class="block text-teal-600 dark:text-teal-300" [routerLink]="'/home'">
-
           <span class="sr-only">Home</span>
-
           <img src="assets/img/logoFerreClick.png" class="h-20 w-24 text-orange-500" />
         </a>
       </div>
@@ -18,7 +16,10 @@
           <ul class="flex items-center gap-6 text-sm">
 
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" [routerLink]="'/home'">
+              <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                 [routerLink]="'/home'"
+                 routerLinkActive="text-orange-500 font-bold"
+                 [routerLinkActiveOptions]="{ exact: true }">
                 Home
               </a>
             </li>
@@ -30,31 +31,38 @@
             </li>
 
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" [routerLink]="'/acerca'">
-                About
+              <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                 [routerLink]="'/productos'"
+                 routerLinkActive="text-orange-500 font-bold"
+                 [routerLinkActiveOptions]="{ exact: true }">
+                Products
               </a>
             </li>
 
-            <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" [routerLink]="'/catalogo'">
-                Catalog
-              </a>
-            </li>
 
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" [routerLink]="'/servicios'">
+              <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                 [routerLink]="'/servicios'"
+                 routerLinkActive="text-orange-500 font-bold"
+                 [routerLinkActiveOptions]="{ exact: true }">
                 Services
               </a>
             </li>
 
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" [routerLink]="'/productos-lista'">
-                Products
+              <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                 [routerLink]="'/acerca'"
+                 routerLinkActive="text-orange-500 font-bold"
+                 [routerLinkActiveOptions]="{ exact: true }">
+                About
               </a>
             </li>
 
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" [routerLink]="'/admin'">
+              <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                 [routerLink]="'/admin'"
+                 routerLinkActive="text-orange-500 font-bold"
+                 [routerLinkActiveOptions]="{ exact: true }">
                 Admin
               </a>
             </li>
@@ -65,12 +73,14 @@
         <!-- Botones login/register -->
         <div class="flex items-center gap-4">
           <div class="sm:flex sm:gap-4">
-            <a class="rounded-md bg-orange-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm dark:hover:bg-orange-500" [routerLink]="'/login'">
+            <a class="rounded-md bg-orange-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm dark:hover:bg-orange-500"
+               [routerLink]="'/login'">
               Login
             </a>
 
             <div class="hidden sm:flex">
-              <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75" [routerLink]="'/register'">
+              <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                 [routerLink]="'/register'">
                 Register
               </a>
             </div>
